@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Drum Machine</h1><br><br>
+        <div class="drums">
+            <div class="kick">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+            <div class="snare">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox"> 
+            </div>
+            <div class="hihat">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox"> 
+            </div>
+       </div>
+    </div>
+    <br><br>
+    <div class="playpause">
+            <button class="playbtn" style="font-size:20px">Start <i class="fa fa-play"></i></button>   
+            <button class="pausebtn" style="font-size:20px">Stop <i class="fa fa-pause"></i></button>
+            <button class="resetbtn" style="font-size:20px">Reset</button>
+    </div>
+        <div class="slider">
+            <tone-slider label="bpm" min="60" max="300" exp="2" value="120"></tone-slider>
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.3/Tone.min.js"></script>
+<script src="https://unpkg.com/@tonejs/ui"></script>
+<script src="./script.js"></script>
+</html>
